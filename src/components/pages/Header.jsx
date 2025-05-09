@@ -19,9 +19,9 @@ export default function HeaderComponent() {
             <div className="col-xl-7 col-lg-5 col-12 col-sm-12 col-md">
               <div className="d-flex align-items-center">
                 <div className="dropdown me-2">
-                  <button
-                    className="btn btn-outline-secondary dropdown-toggle"
-                    type="button"
+                  <button 
+                    className="btn btn-outline-secondary dropdown-toggle" 
+                    type="button" 
                     data-bs-toggle="dropdown"
                     style={{ minWidth: "120px" }}
                   >
@@ -33,7 +33,7 @@ export default function HeaderComponent() {
                     ))}
                   </ul>
                 </div>
-
+                
                 <form action="#" className="search flex-grow-1">
                   <div className="input-group">
                     <input
@@ -49,12 +49,21 @@ export default function HeaderComponent() {
               </div>
             </div>
 
-            {/* Links */}
+            {/* Icons Navigation */}
             <div className="col-xl-3 col-lg-4 col-md-12 col-12">
-              <nav className="d-flex justify-content-end gap-3">
-                {["Hot offers", "Gift boxes", "Projects"].map((text, i) => (
-                  <a key={i} href="#" className="text-dark text-decoration-none">
-                    {text}
+              <nav className="d-flex justify-content-end gap-4">
+                {[
+                  {icon: "user", text: "Profile"},
+                  {icon: "comment-dots", text: "Message", notify: 1},
+                  {icon: "box", text: "Orders"},
+                  {icon: "shopping-cart", text: "My cart"}
+                ].map((item, i) => (
+                  <a key={i} href="#" className="text-dark text-decoration-none text-center">
+                    <div className="position-relative">
+                      <i className={`fa fa-${item.icon} fs-5`}></i>
+                      {item.notify && <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">{item.notify}</span>}
+                    </div>
+                    <small className="d-block">{item.text}</small>
                   </a>
                 ))}
               </nav>
@@ -66,42 +75,52 @@ export default function HeaderComponent() {
       {/* Bottom Navigation Bar */}
       <nav className="navbar navbar-light bg-white navbar-expand-lg border-bottom">
         <div className="container">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
           <div className="collapse navbar-collapse" id="navbar_main">
             <ul className="navbar-nav">
-              {/* Regular Navigation Items */}
-              {["All category", "Hot offers", "Gift boxes", "Projects", "Menu item"].map((item, i) => (
+              {/* Main Navigation Items */}
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  All category
+                </a>
+                <ul className="dropdown-menu">
+                  {["Hot offers", "Gift boxes", "Projects"].map((item, i) => (
+                    <li key={i}><a className="dropdown-item" href="#">{item}</a></li>
+                  ))}
+                </ul>
+              </li>
+              
+              {["Hot offers", "Gift boxes", "Projects", "Menu item", "Help"].map((item, i) => (
                 <li key={i} className="nav-item">
                   <a className="nav-link" href="#">{item}</a>
                 </li>
               ))}
-
-              {/* Help Dropdown */}
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  Help
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">FAQ</a></li>
-                  <li><a className="dropdown-item" href="#">Contact Us</a></li>
-                  <li><a className="dropdown-item" href="#">Shipping Info</a></li>
-                </ul>
-              </li>
             </ul>
 
-            {/* Right-side Navigation - Keep Same */}
+            {/* Right Side Navigation */}
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                   English, USD
                 </a>
-                {/* ... (keep currency/language dropdown same) ... */}
+                <div className="dropdown-menu dropdown-menu-end">
+                  <div className="d-flex p-3">
+                    <div className="me-4">
+                      <h6>Currency</h6>
+                      {["USD", "RUBL", "UZS"].map((currency, i) => (
+                        <a key={i} className="dropdown-item" href="#">{currency}</a>
+                      ))}
+                    </div>
+                    <div className="ms-4">
+                      <h6>Language</h6>
+                      {["English", "Russian", "Uzbek"].map((lang, i) => (
+                        <a key={i} className="dropdown-item" href="#">{lang}</a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Ship to Germany 🇩🇪</a>
+                <a className="nav-link" href="#">Ship to</a>
               </li>
             </ul>
           </div>

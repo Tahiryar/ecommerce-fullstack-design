@@ -9,6 +9,7 @@ import ExtraServices from '../components/pages/ExtraServices';
 import IntroSection from '../components/pages/IntroSection';
 import NewProductsSection from '../components/pages/NewProductsSection';
 import NewsletterSection from '../components/pages/NewsletterSection';
+import ElectronicsItems from '../components/pages/ElectronicsItems';
 
 
 
@@ -19,6 +20,7 @@ function Home() {
                 <IntroSection/>
                 <DealsAndOffers />
                 <HomeOutdoorItems/>
+                <ElectronicsItems/>
                 <SupplierInquiry />
                 <NewProductsSection />
                 <ExtraServices />
