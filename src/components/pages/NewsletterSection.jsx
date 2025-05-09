@@ -2,7 +2,10 @@ import React from "react";
 
 const NewsletterSection = () => {
   return (
-    <section className="padding-y-lg bg-gray-light">
+    <section
+      className="padding-y-lg"
+      style={{ backgroundColor: "#f8f9fa" }} // Light grey background
+    >
       <div className="container">
         <h4 className="text-center">Subscribe on our newsletter</h4>
         <p className="pb-2 text-center">

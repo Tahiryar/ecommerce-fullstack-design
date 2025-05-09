@@ -119,7 +119,7 @@ const IntroSection = () => {
                   <div className="bg-primary-subtle p-3 rounded mb-3">
                     <p className="d-flex mb-3 text-base">
                       <img
-                        src="./Website layout sample_files/avatar.jpg"
+                        src="https://avatars.githubusercontent.com/u/179708755?v=4"
                         className="img-avatar me-2"
                         width="44"
                         height="44"

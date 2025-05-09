@@ -10,7 +10,7 @@ export default function HeaderComponent() {
             {/* Logo and Brand */}
             <div className="col-xl-2 col-lg col-6 col-sm-6 col-md flex-grow-0">
               <a href="#" className="brand-wrap me-3 d-flex align-items-center">
-                <img className="logo" height="40" src="./Website layout sample_files/logo.svg" alt="Logo" />
+                <img className="logo" height="40" src="https://previews.123rf.com/images/sommersby/sommersby1503/sommersby150300215/37207587-blue-flat-shopping-bag-icon.jpg" alt="Logo" />
                 <span className="ms-2 fw-bold">Brand</span>
               </a>
             </div>
@@ -119,9 +119,26 @@ export default function HeaderComponent() {
                   </div>
                 </div>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Ship to</a>
-              </li>
+              <li className="nav-item d-flex align-items-center">
+  <a className="nav-link d-flex align-items-center" href="#" style={{ gap: '8px' }}>
+    Ship to
+    <img
+      src="https://ecommerce-ui.com/uikit/images/flags/flag-usa.png"
+      alt="USA Flag"
+      style={{ width: '20px', height: '14px', objectFit: 'cover' }}
+    />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      style={{ marginLeft: '4px' }}
+    >
+      <path fillRule="evenodd" d="M1.5 5.5l6 6 6-6H1.5z" />
+    </svg>
+  </a>
+</li>
             </ul>
           </div>
         </div>

@@ -2,14 +2,14 @@ import React from "react";
 
 const HomeOutdoorItems = () => {
   const items = [
-    { title: "Armchairs", img: "https://ecommerce-ui.com/uikit/images/items/tech/1.jpg", price: 25 },
-    { title: "Office chairs", img: "https://ecommerce-ui.com/uikit/images/items/tech/2.jpg", price: 19 },
-    { title: "Kitchen dishes", img: "https://ecommerce-ui.com/uikit/images/items/tech/3.jpg", price: 7 },
-    { title: "Home Plants", img: "https://ecommerce-ui.com/uikit/images/items/tech/4.jpg", price: 10 },
-    { title: "For Bedroom", img: "https://ecommerce-ui.com/uikit/images/items/tech/5.jpg", price: 12 },
-    { title: "Home Lighting", img: "https://ecommerce-ui.com/uikit/images/items/tech/6(1).jpg", price: 19 },
-    { title: "Best items", img: "https://ecommerce-ui.com/uikit/images/items/tech/7(1).jpg", price: 19 },
-    { title: "Category name", img: "https://ecommerce-ui.com/uikit/images/items/tech/8(1).jpg", price: 19 },
+    { title: "Armchairs", img: "https://ecommerce-ui.com/uikit/images/items/interior/1.jpg", price: 25 },
+    { title: "Office chairs", img: "https://ecommerce-ui.com/uikit/images/items/interior/2.jpg", price: 19 },
+    { title: "Kitchen dishes", img: "https://ecommerce-ui.com/uikit/images/items/interior/3.jpg", price: 7 },
+    { title: "Home Plants", img: "https://ecommerce-ui.com/uikit/images/items/interior/4.jpg", price: 10 },
+    { title: "For Bedroom", img: "https://ecommerce-ui.com/uikit/images/items/interior/5.jpg", price: 12 },
+    { title: "Home Lighting", img: "https://ecommerce-ui.com/uikit/images/items/interior/6.jpg", price: 19 },
+    { title: "Best items", img: "https://ecommerce-ui.com/uikit/images/items/interior/7.jpg", price: 19 },
+    { title: "Category name", img: "https://ecommerce-ui.com/uikit/images/items/interior/8.jpg", price: 19 },
   ];
 
   return (
@@ -19,7 +19,7 @@ const HomeOutdoorItems = () => {
           <div className="row gx-0">
             <aside
               className="col-lg-3 p-4 bg-cover"
-              style={{ backgroundImage: "url(images/banners/interior.jpg)" }}
+              style={{ backgroundImage: "url(https://ecommerce-ui.com/uikit/images/banners/interior.jpg)" }}
             >
               <header>
                 <h3 className="mb-3">

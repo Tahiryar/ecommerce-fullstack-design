@@ -3,13 +3,13 @@ import React from "react";
 const ElectronicsItems = () => {
   const items = [
     { title: "Smartphones", img: "https://ecommerce-ui.com/uikit/images/items/tech/1.jpg", price: 299 },
-    { title: "Laptops", img: "https://ecommerce-ui.com/uikit/images/items/tech/2.jpg", price: 899 },
-    { title: "Headphones", img: "https://ecommerce-ui.com/uikit/images/items/tech/3.jpg", price: 149 },
-    { title: "Smart Watches", img: "https://ecommerce-ui.com/uikit/images/items/tech/4.jpg", price: 199 },
-    { title: "Tablets", img: "https://ecommerce-ui.com/uikit/images/items/tech/5.jpg", price: 399 },
-    { title: "Cameras", img: "https://ecommerce-ui.com/uikit/images/items/tech/6(1).jpg", price: 599 },
-    { title: "Gaming Consoles", img: "https://ecommerce-ui.com/uikit/images/items/tech/7(1).jpg", price: 499 },
-    { title: "Accessories", img: "https://ecommerce-ui.com/uikit/images/items/tech/8(1).jpg", price: 49 },
+    { title: "Laptops", img: "https://ecommerce-ui.com/uikit/images/items/tech/7.jpg", price: 899 },
+    { title: "Headphones", img: "https://ecommerce-ui.com/uikit/images/items/tech/9.jpg", price: 149 },
+    { title: "Smart Watches", img: "https://ecommerce-ui.com/uikit/images/items/tech/8.jpg", price: 199 },
+    { title: "Tablets", img: "https://ecommerce-ui.com/uikit/images/items/tech/2.jpg", price: 399 },
+    { title: "Cameras", img: "https://ecommerce-ui.com/uikit/images/items/tech/6.jpg", price: 599 },
+    { title: "Gaming Consoles", img: "https://ecommerce-ui.com/uikit/images/items/tech/5.jpg", price: 499 },
+    { title: "Accessories", img: "https://discountstore.pk/cdn/shop/files/71fF7MomXRL.jpg?v=1735818179", price: 49 },
   ];
 
   return (
@@ -19,7 +19,7 @@ const ElectronicsItems = () => {
           <div className="row gx-0">
             <aside
               className="col-lg-3 p-4 bg-cover"
-              style={{ backgroundImage: "url(images/banners/electronics-banner.jpg)" }}
+              style={{ backgroundImage: "url(https://ecommerce-ui.com/uikit/images/banners/tech.jpg)" }}
             >
               <header>
                 <h3 className="mb-3">

@@ -41,19 +41,19 @@ const products = [
     title: 'Ceramic Jug for Kitchen, Medium size',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/8.jpg',
+    image: 'https://ecommerce-ui.com/uikit/images/items/interior/2.jpg',
     price: '$790.50',
     title: 'Armchair for Home and Office, Yellow color',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/9.jpg',
+    image: 'https://ecommerce-ui.com/uikit/images/items/tech/7.jpg',
     price: '$790.50',
     title: 'Airbed Blue Soft Material With Pump',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/10.jpg',
+    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/5.jpg',
     price: '$19.50',
-    title: 'Modern Product Name Goes Here',
+    title: 'Lightweight Jeans bag for travel, Unisex model',
   },
 ];
 
@@ -68,10 +68,28 @@ const NewProductsSection = () => {
         <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2">
           {products.map((product, index) => (
             <div className="col" key={index}>
-              <figure className="card card-product-grid">
-                <a href="#" className="img-wrap" onClick={(e) => e.preventDefault()}>
-                  <img src={product.image} alt={product.title} />
-                </a>
+              <figure className="card card-product-grid p-3 " style={{ height: "330px" }}>
+              <a
+    href="#"
+    className="img-wrap d-block"
+    onClick={(e) => e.preventDefault()}
+    style={{
+      width: "100%",
+      height: "180px",
+      overflow: "hidden",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+
+  
+    }}
+  >
+    <img
+      src={product.image}
+      alt={product.title}
+      style={{ maxHeight: "100%", maxWidth: "100%", objectFit: "contain" }}
+    />
+  </a>
                 <figcaption className="p-3">
                   <div className="price-wrap">
                     <span className="price">{product.price}</span>

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
 import './App.css'; // Import your CSS file here
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 function App() {
   return (
     <Router>

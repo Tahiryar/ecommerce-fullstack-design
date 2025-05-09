@@ -1622,3 +1622,6 @@ ul.row {
 .item-option-select .btn {
   min-width: 80px;
 }
+a {
+  text-decoration: none;
+}
