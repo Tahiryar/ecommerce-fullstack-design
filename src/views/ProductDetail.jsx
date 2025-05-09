@@ -1,7 +1,21 @@
 // MainPage.js
 import React from 'react';
-import SidebarFilter from './SidebarFilter';
-import ProductCard from './ProductCard';
+import { Link } from 'react-router-dom';
+import Header from "../components/pages/Header"
+import DealsAndOffers from '../components/pages/DealsAndOffers';
+import HomeOutdoorItems from '../components/pages/HomeOutdoorItems';  
+import SupplierInquiry from '../components/pages/SupplierInquiry';    
+import Footer from '../components/pages/Footer';
+import ExtraServices from '../components/pages/ExtraServices';
+import IntroSection from '../components/pages/IntroSection';
+import NewProductsSection from '../components/pages/NewProductsSection';
+import NewsletterSection from '../components/pages/NewsletterSection';
+import ElectronicsItems from '../components/pages/ElectronicsItems';
+import SuppliersByRegion from '../components/pages/SuppliersByRegion';
+import SidebarFilter from '../components/pages/SidebarFilter';
+import ProductCard from '../components/pages/ProductCard';
+import BreadcrumbNav from '../components/pages/BreadcrumbNav';
+
 
 const MainPage = () => {
   const products = [
@@ -27,6 +41,11 @@ const MainPage = () => {
   ];
 
   return (
+    <>
+    <Header/>
+    <BreadcrumbNav title="Products" />
+    
+
     <div className="d-flex">
       <SidebarFilter />
       <div className="p-4 flex-grow-1">
@@ -35,6 +54,9 @@ const MainPage = () => {
         ))}
       </div>
     </div>
+    <NewsletterSection/>
+    <Footer/>
+    </>
   );
 };
 
