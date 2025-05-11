@@ -1,20 +1,13 @@
 import React from 'react';
 
-import ProductCard from '../components/pages/ProductCard';
-import Header from '../components/pages/Header';
-import BreadcrumbNav from '../components/pages/BreadcrumbNav';
-import ProductHeaderBar from '../components/pages/ProductHeaderBar';
-import ProductTabs from '../components/pages/ProductTabs';
-import YouMayLike from '../components/pages/YouMayLike';
-import SavedForLater from '../components/pages/SavedForLater';
-import PromoBanner from '../components/pages/PromoBanner'; 
-import Footer from '../components/pages/Footer';
-
-import Cart from '../components/pages/Cart';
-import CouponForm from '../components/pages/CouponForm';
-import Summary from '../components/pages/Summary';
-import Features from '../components/pages/features'; 
-import SavedItems from '../components/pages/SavedItems';
+import Header from '../../components/Header';
+import PromoBanner from './components/PromoBanner'; 
+import Cart from './components/Cart';
+import CouponForm from './components/CouponForm';
+import Summary from './components/Summary';
+import Features from './components/features'; 
+import SavedItems from './components/SavedItems';
+import Footer from '../../components/Footer';
 
 const AddToCart = () => {
   const cartItems = [

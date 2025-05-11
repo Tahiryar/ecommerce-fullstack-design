@@ -8,7 +8,6 @@ const CartItem = ({ img, title, details, price }) => (
           <img src={img} className="size-100x100 img-thumbnail" alt={title} />
         </div>
         <figcaption className="info">
-          <a className="title" href="/uikit/p-market-detail">{title}</a>
           <p className="text-muted">{details}</p>
           <a href="#" className="btn btn-light text-danger btn-sm" onClick={e => e.preventDefault()}>Remove</a>
           <a href="#" className="btn btn-light btn-sm" onClick={e => e.preventDefault()}>Save for later</a>

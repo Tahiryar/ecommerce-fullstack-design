@@ -1,21 +1,14 @@
 // MainPage.js
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from "../components/pages/Header"
-import DealsAndOffers from '../components/pages/DealsAndOffers';
-import HomeOutdoorItems from '../components/pages/HomeOutdoorItems';  
-import SupplierInquiry from '../components/pages/SupplierInquiry';    
-import Footer from '../components/pages/Footer';
-import ExtraServices from '../components/pages/ExtraServices';
-import IntroSection from '../components/pages/IntroSection';
-import NewProductsSection from '../components/pages/NewProductsSection';
-import NewsletterSection from '../components/pages/NewsletterSection';
-import ElectronicsItems from '../components/pages/ElectronicsItems';
-import SuppliersByRegion from '../components/pages/SuppliersByRegion';
-import SidebarFilter from '../components/pages/SidebarFilter';
-import ProductCard from '../components/pages/ProductCard';
-import BreadcrumbNav from '../components/pages/BreadcrumbNav';
-import ProductHeaderBar from '../components/pages/ProductHeaderBar';
+
+import Header from "../../components/Header"  
+import NewsletterSection from './components/NewsletterSection';
+import SidebarFilter from './components/SidebarFilter';
+import ProductCard from './components/ProductCard';
+import BreadcrumbNav from './components/BreadcrumbNav';
+import ProductHeaderBar from './components/ProductHeaderBar';
+import Footer from '../../components/Footer';
+ 
 
 
 const MainPage = () => {

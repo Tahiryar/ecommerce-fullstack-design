@@ -1,14 +1,13 @@
 import React from 'react';
 
-import ProductCard from '../components/pages/ProductCard';
-import Header from '../components/pages/Header';
-import BreadcrumbNav from '../components/pages/BreadcrumbNav';
-import ProductHeaderBar from '../components/pages/ProductHeaderBar';
-import ProductTabs from '../components/pages/ProductTabs';
-import YouMayLike from '../components/pages/YouMayLike';
-import RelatedProducts from '../components/pages/RelatedProducts';
-import PromoBanner from '../components/pages/PromoBanner'; 
-import Footer from '../components/pages/Footer';
+
+import Header from "../../components/Header"
+import BreadcrumbNav from './components/BreadcrumbNav';
+import ProductTabs from './components/ProductTabs';
+import YouMayLike from './components/YouMayLike';
+import RelatedProducts from './components/RelatedProducts';
+import PromoBanner from './components/PromoBanner'; 
+import Footer from '../../components/Footer';
 const ProductDetail = () => {
   return (
     <>
