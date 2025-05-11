@@ -1,15 +1,28 @@
 import React from "react";
 
+import img1 from '../../../assets/images/electronics/1.jpg';
+import img2 from '../../../assets/images/electronics/2.jpg';
+import img3 from '../../../assets/images/electronics/3.jpg';
+import img4 from '../../../assets/images/electronics/4.jpg';
+import img5 from '../../../assets/images/electronics/5.jpg';
+import img6 from '../../../assets/images/electronics/6.jpg';
+import img7 from '../../../assets/images/electronics/7.jpg';
+import img8 from '../../../assets/images/electronics/8.jpg';
+import img9 from '../../../assets/images/electronics/9.jpg';
+
+import tech from '../../../assets/images/banners/tech.jpg';
+
 const ElectronicsItems = () => {
   const items = [
-    { title: "Smartphones", img: "https://ecommerce-ui.com/uikit/images/items/tech/1.jpg", price: 299 },
-    { title: "Laptops", img: "https://ecommerce-ui.com/uikit/images/items/tech/7.jpg", price: 899 },
-    { title: "Headphones", img: "https://ecommerce-ui.com/uikit/images/items/tech/9.jpg", price: 149 },
-    { title: "Smart Watches", img: "https://ecommerce-ui.com/uikit/images/items/tech/8.jpg", price: 199 },
-    { title: "Tablets", img: "https://ecommerce-ui.com/uikit/images/items/tech/2.jpg", price: 399 },
-    { title: "Cameras", img: "https://ecommerce-ui.com/uikit/images/items/tech/6.jpg", price: 599 },
-    { title: "Gaming Consoles", img: "https://ecommerce-ui.com/uikit/images/items/tech/5.jpg", price: 499 },
-    { title: "Accessories", img: "https://discountstore.pk/cdn/shop/files/71fF7MomXRL.jpg?v=1735818179", price: 49 },
+    { title: "Smartphones", img: img3, price: 299 },
+    { title: "Laptops", img: img4, price: 899 },
+    { title: "Headphones", img: img2, price: 149 },
+    { title: "Smart Watches", img: img3, price: 199 },
+    { title: "Tablets", img: img7, price: 399 },
+    { title: "Cameras", img: img5, price: 599 },
+    { title: "Gaming Consoles", img: img8, price: 499 },
+    { title: "Accessories", img: img9, price: 49 },
+    
   ];
 
   return (
@@ -19,7 +32,7 @@ const ElectronicsItems = () => {
           <div className="row gx-0">
             <aside
               className="col-lg-3 p-4 bg-cover"
-              style={{ backgroundImage: "url(https://ecommerce-ui.com/uikit/images/banners/tech.jpg)" }}
+              style={{ backgroundImage:tech }}
             >
               <header>
                 <h3 className="mb-3">

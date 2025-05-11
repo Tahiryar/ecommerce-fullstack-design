@@ -1,15 +1,27 @@
 import React from "react";
 
+import img1 from '../../../assets/images/home/h1.jpg';
+import img2 from '../../../assets/images/home/h2.jpg';
+import img3 from '../../../assets/images/home/h3.jpg';
+import img4 from '../../../assets/images/home/h4.jpg';
+import img5 from '../../../assets/images/home/h5.jpg';
+import img6 from '../../../assets/images/home/h6.jpg';
+import img7 from '../../../assets/images/home/h7.jpg';
+import img8 from '../../../assets/images/home/h8.jpg';
+
+import interior from '../../../assets/images/banners/interior.jpg';
+
+
 const HomeOutdoorItems = () => {
-  const items = [
-    { title: "Armchairs", img: "https://ecommerce-ui.com/uikit/images/items/interior/1.jpg", price: 25 },
-    { title: "Office chairs", img: "https://ecommerce-ui.com/uikit/images/items/interior/2.jpg", price: 19 },
-    { title: "Kitchen dishes", img: "https://ecommerce-ui.com/uikit/images/items/interior/3.jpg", price: 7 },
-    { title: "Home Plants", img: "https://ecommerce-ui.com/uikit/images/items/interior/4.jpg", price: 10 },
-    { title: "For Bedroom", img: "https://ecommerce-ui.com/uikit/images/items/interior/5.jpg", price: 12 },
-    { title: "Home Lighting", img: "https://ecommerce-ui.com/uikit/images/items/interior/6.jpg", price: 19 },
-    { title: "Best items", img: "https://ecommerce-ui.com/uikit/images/items/interior/7.jpg", price: 19 },
-    { title: "Category name", img: "https://ecommerce-ui.com/uikit/images/items/interior/8.jpg", price: 19 },
+ const items = [
+    { title: "Armchairs", img: img1, price: 25 },
+    { title: "Office chairs", img: img2, price: 19 },
+    { title: "Kitchen dishes", img: img3, price: 7 },
+    { title: "Home Plants", img: img4, price: 10 },
+    { title: "For Bedroom", img: img5, price: 12 },
+    { title: "Home Lighting", img: img6, price: 19 },
+    { title: "Best items", img: img7, price: 19 },
+    { title: "Category name", img: img8, price: 19 },
   ];
 
   return (
@@ -19,7 +31,7 @@ const HomeOutdoorItems = () => {
           <div className="row gx-0">
             <aside
               className="col-lg-3 p-4 bg-cover"
-              style={{ backgroundImage: "url(https://ecommerce-ui.com/uikit/images/banners/interior.jpg)" }}
+              style={{ backgroundImage: interior }}
             >
               <header>
                 <h3 className="mb-3">

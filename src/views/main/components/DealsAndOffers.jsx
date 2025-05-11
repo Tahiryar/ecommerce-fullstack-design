@@ -1,12 +1,18 @@
 import React from 'react';
 
+import img1 from '../../../assets/images/electronics/1.jpg';
+import img2 from '../../../assets/images/electronics/2.jpg';
+import img3 from '../../../assets/images/electronics/3.jpg';
+import img4 from '../../../assets/images/electronics/4.jpg';
+import img5 from '../../../assets/images/electronics/5.jpg';
+
 const DealsAndOffers = () => {
   const products = [
-    { img: 'https://ecommerce-ui.com/uikit/images/items/tech/10.jpg', title: 'Electric kattle', discount: '-20%' },
-    { img: 'https://ecommerce-ui.com/uikit/images/items/tech/9.jpg', title: 'Headsets', discount: '-45%' },
-    { img: 'https://ecommerce-ui.com/uikit/images/items/tech/8.jpg', title: 'Smart watches', discount: '-15%' },
-    { img: 'https://ecommerce-ui.com/uikit/images/items/tech/7.jpg', title: 'HP Laptop', discount: '-20%' },
-    { img: 'https://ecommerce-ui.com/uikit/images/items/tech/6.jpg', title: 'Canon camera', discount: '-20%' },
+    { img: img1, title: 'Electric kattle', discount: '-20%' },
+    { img: img2 , title: 'Headsets', discount: '-45%' },
+    { img: img3 , title: 'Smart watches', discount: '-15%' },
+    { img: img4 , title: 'HP Laptop', discount: '-20%' },
+    { img: img5, title: 'Canon camera', discount: '-20%' },
   ];
 
   return (

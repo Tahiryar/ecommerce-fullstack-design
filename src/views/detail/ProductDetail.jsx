@@ -10,7 +10,8 @@ import PromoBanner from './components/PromoBanner';
 import Footer from '../../components/Footer';
 const ProductDetail = () => {
   return (
-    <>
+    
+    <div className="bg-light">
     <Header/>
     <BreadcrumbNav title="Products" />
 
@@ -177,7 +178,7 @@ const ProductDetail = () => {
     <RelatedProducts/>
     <PromoBanner/>
     <Footer/>
-    </>
+    </div>
   );
 };
 

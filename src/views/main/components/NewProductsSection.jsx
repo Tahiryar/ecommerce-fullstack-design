@@ -1,61 +1,69 @@
 import React from 'react';
+import img1 from '../../../assets/images/cloth/c1.jpg';
+import img2 from '../../../assets/images/cloth/c2.jpg';
+import img3 from '../../../assets/images/cloth/c3.jpg';
+import img4 from '../../../assets/images/cloth/c4.jpg';
+import img5 from '../../../assets/images/cloth/c5.jpg';
+import img6 from '../../../assets/images/cloth/c6.jpg';
+import img7 from '../../../assets/images/cloth/c7.jpg';
+
+
+import img8 from '../../../assets/images/electronics/4.jpg';
+import img9 from '../../../assets/images/home/h1.jpg';
 
 const products = [
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/1.jpg',
+    image: img1,
     price: '$24.00',
     title: 'T-shirts with multiple colors, for men',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/2.jpg',
-
+    image: img2,
     price: '$29.90',
     title: 'T-shirts with blue color, unisex model',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/3.jpg',
-
+    image: img3,
     price: '$790.50',
     title: 'Casual Winter Jacket, Brown Color',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/4.jpg',
-
+    image: img4,
     price: '$12.00',
     title: 'Jeans shorts for men darkblue color',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/5.jpg',
-
+    image: img5,
     price: '$192.50',
     title: 'Lightweight Jeans bag for travel, Unisex model',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/6.jpg',
+    image: img6,
     price: '$790.50',
     title: 'GoPro HERO6 4K Action Camera - Black',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/7.jpg',
+    image: img7,
     price: '$790.50',
     title: 'Ceramic Jug for Kitchen, Medium size',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/interior/2.jpg',
+    image: img9,
     price: '$790.50',
     title: 'Armchair for Home and Office, Yellow color',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/tech/7.jpg',
+    image: img8,
     price: '$790.50',
     title: 'Airbed Blue Soft Material With Pump',
   },
   {
-    image: 'https://ecommerce-ui.com/uikit/images/items/cloth/5.jpg',
+    image: img5,
     price: '$19.50',
     title: 'Lightweight Jeans bag for travel, Unisex model',
   },
 ];
+
 
 const NewProductsSection = () => {
   return (

@@ -9,12 +9,14 @@ import BreadcrumbNav from './components/BreadcrumbNav';
 import ProductHeaderBar from './components/ProductHeaderBar';
 import Footer from '../../components/Footer';
  
+import img10 from '../../assets/images/electronics/10.jpg';
+import img1 from '../../assets/images/home/h1.jpg';
 
 
 const MainPage = () => {
   const products = [
     {
-      image: 'https://ecommerce-ui.com/uikit/images/items/interior/1.jpg',
+      image: img1,
       title: 'Armchair for Home and Office, Yellow color',
       price: 990.99,
       originalPrice: 1299,
@@ -24,7 +26,7 @@ const MainPage = () => {
       description: 'It is a long established fact that a reader will be distracted by the readable content...'
     },
     {
-      image: 'https://ecommerce-ui.com/uikit/images/items/interior/8.jpg',
+      image: img10,
       title: 'Great product name here as new model',
       price: 138.50,
       rating: 4.5,

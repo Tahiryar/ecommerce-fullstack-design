@@ -1,5 +1,8 @@
 import React from "react";
 
+import mainTechImage from '../../../assets/images/banners/main-tech.png';
+
+
 const categories = [
   "Electronics",
   "Clothes and wear",
@@ -16,20 +19,21 @@ const carouselItems = [
   {
     captionTitle: "Latest trending",
     captionSubtitle: "Electronic items",
-    image: "https://ecommerce-ui.com/uikit/images/banners/main-tech.png",
+    image: mainTechImage,
     active: false,
   },
   {
     captionTitle: "Latest deals",
     captionSubtitle: "Best Smartphones",
-    image: "https://ecommerce-ui.com/uikit/images/banners/main-tech.png",
+    image: mainTechImage, 
     active: true,
   },
 ];
 
+
 const IntroSection = () => {
   return (
-    <section className="section-intro mb-3 mt-3">
+    <section className="section-intro mb-3 mt-3 ">
       <div className="container">
         <main className="card p-3">
           <div className="row">

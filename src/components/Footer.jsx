@@ -116,7 +116,9 @@ const Footer = () => {
         <hr className="my-0" />
 
         {/* Footer Bottom */}
-        <section className="footer-bottom d-flex justify-content-between py-3">
+       
+      </div>
+      <section className="footer-bottom d-flex justify-content-between py-3 px-5 bg-light">
           <div className="text-muted">© 2018-2024 Ecommerce UI.</div>
           <nav className="dropup">
             <button
@@ -139,7 +141,6 @@ const Footer = () => {
             </ul>
           </nav>
         </section>
-      </div>
     </footer>
   );
 };

@@ -15,7 +15,7 @@ import Footer from '../../components/Footer';
 
 function Home() {
     return (
-        <div className="home-page bg-gray-100">
+        <div className="home-page bg-light">
                 <Header/>
                 <IntroSection/>
                 <DealsAndOffers />
