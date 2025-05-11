@@ -34,11 +34,11 @@ const carouselItems = [
 const IntroSection = () => {
   return (
     <section className="section-intro mb-3 mt-3 ">
-      <div className="container">
-        <main className="card p-3">
+      <div className="mobile_banner">
+        <main className="card mobile_card">
           <div className="row">
             {/* Sidebar Navigation */}
-            <aside className="col-lg-3">
+            <aside className="col-lg-3 iconnav">
               <nav className="nav flex-column nav-pills mb-3 mb-lg-0">
                 {categories.map((category, idx) => (
                   <a
@@ -81,15 +81,15 @@ const IntroSection = () => {
                             </h2>
                           </div>
                           <img
-                            style={{ height: "370px" }}
+                           
                             src={item.image}
-                            className="d-block w-100 img-cover"
+                            className="d-block w-100 img-cover mobile-img-banner"
                             alt="Banner"
                           />
                         </article>
                       ))}
                     </div>
-
+             
                     <button
                       className="carousel-control-prev"
                       type="button"

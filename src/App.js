@@ -5,6 +5,7 @@ import ProductList from './views/listview/ProductList';
 import AddToCart from './views/cart/AddToCart';
 import ProductDetail from './views/detail/ProductDetail';
 import './assets/css/style.css';
+ import './assets/css/responsive.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {

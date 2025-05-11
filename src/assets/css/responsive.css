@@ -1,0 +1,30 @@
+.mobile-img-banner{
+  height: 370px;
+}
+
+.mobile_card {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .iconnav {
+    display: none;
+  }
+
+  .mobile_banner {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 250px; /* set your desired height */
+    object-fit: cover; /* if it's an image inside */
+  }
+
+  .mobile_card {
+    padding: 0 !important;
+  }
+  .mobile-img-banner{
+  height: 200px;
+}
+}
+
+

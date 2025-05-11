@@ -7,73 +7,72 @@ export default function HeaderComponent() {
       <section className="header-main bg-white border-bottom py-lg-3 py-2">
         <div className="container">
           <div className="row gx-2 align-items-center">
-            {/* Logo and Brand */}
-            <div className="col-xl-2 col-lg col-6 col-sm-6 col-md flex-grow-0">
-              <a href="#" className="brand-wrap me-3 d-flex align-items-center">
-                <img className="logo" height="40" src="https://previews.123rf.com/images/sommersby/sommersby1503/sommersby150300215/37207587-blue-flat-shopping-bag-icon.jpg" alt="Logo" />
-                <span className="ms-2 fw-bold">Brand</span>
-              </a>
-            </div>
+  {/* Logo and Brand */}
+  <div className="col-xl-2 col-lg-3 col-md-6 col-12">
+    <div className="d-flex justify-content-between align-items-center px-3 py-2">
+      <div className="d-flex align-items-center gap-2">
+        <i className="fas fa-bars"></i>
+        <a href="#" className="d-flex align-items-center text-decoration-none">
+          <img className="logo" height="30" src="https://previews.123rf.com/images/sommersby/sommersby1503/sommersby150300215/37207587-blue-flat-shopping-bag-icon.jpg" alt="Logo" />
+          <span className="ms-2 fw-bold text-primary">Brand</span>
+        </a>
+      </div>
+      <div className="d-flex gap-3 d-md-none">
+        <span className="d-flex align-items-center"><i className="fas fa-shopping-cart"></i></span>
+        <span className="d-flex align-items-center"><i className="far fa-user"></i></span>
+      </div>
+    </div>
+  </div>
 
-            {/* Search and Category */}
-            <div className="col-xl-7 col-lg-5 col-12 col-sm-12 col-md">
-              <div className="d-flex align-items-center">
-                <div className="dropdown me-2">
-                  <button 
-                    className="btn btn-outline-secondary dropdown-toggle" 
-                    type="button" 
-                    data-bs-toggle="dropdown"
-                    style={{ minWidth: "120px" }}
-                  >
-                    All category
-                  </button>
-                  <ul className="dropdown-menu">
-                    {["Vintage", "Other", "W/usr"].map((item, i) => (
-                      <li key={i}><a className="dropdown-item" href="#">{item}</a></li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <form action="#" className="search flex-grow-1">
-                  <div className="input-group">
-                    <input
-                      type="search"
-                      className="form-control"
-                      placeholder="Search"
-                    />
-                    <button className="btn btn-primary">
-                      <i className="fa fa-search"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
+  {/* Search and Category */}
+  <div className="col-xl-7 col-lg-5 col-12 col-sm-12 col-md">
+    <div className="d-flex align-items-center">
+      <div className="dropdown me-2 iconnav">
+        <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style={{ minWidth: "120px" }}>
+          All category
+        </button>
+        <ul className="dropdown-menu">
+          {["Vintage", "Other", "W/usr"].map((item, i) => (
+            <li key={i}><a className="dropdown-item" href="#">{item}</a></li>
+          ))}
+        </ul>
+      </div>
+      <form action="#" className="search flex-grow-1">
+        <div className="input-group">
+          <input type="search" className="form-control" placeholder="Search" />
+          <button className="btn btn-primary">
+            <i className="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 
-            {/* Icons Navigation */}
-            <div className="col-xl-3 col-lg-4 col-md-12 col-12">
-              <nav className="d-flex justify-content-end gap-4">
-                {[
-                  {icon: "user", text: "Profile"},
-                  {icon: "comment-dots", text: "Message", notify: 1},
-                  {icon: "box", text: "Orders"},
-                  {icon: "shopping-cart", text: "My cart"}
-                ].map((item, i) => (
-                  <a key={i} href="#" className="text-dark text-decoration-none text-center">
-                    <div className="position-relative">
-                      <i className={`fa fa-${item.icon} fs-5`}></i>
-                      {item.notify && <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">{item.notify}</span>}
-                    </div>
-                    <small className="d-block">{item.text}</small>
-                  </a>
-                ))}
-              </nav>
-            </div>
+  {/* Icons Navigation */}
+  <div className="iconnav col-xl-3 col-lg-4 col-md-12 col-12">
+    <nav className="d-flex justify-content-end gap-4">
+      {[
+        {icon: "user", text: "Profile"},
+        {icon: "comment-dots", text: "Message", notify: 1},
+        {icon: "box", text: "Orders"},
+        {icon: "shopping-cart", text: "My cart"}
+      ].map((item, i) => (
+        <a key={i} href="#" className="text-dark text-decoration-none text-center">
+          <div className="position-relative">
+            <i className={`fa fa-${item.icon} fs-5`}></i>
+            {item.notify && <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">{item.notify}</span>}
           </div>
+          <small className="d-block">{item.text}</small>
+        </a>
+      ))}
+    </nav>
+  </div>
+</div>
         </div>
       </section>
 
       {/* Bottom Navigation Bar */}
-      <nav className="navbar navbar-light bg-white navbar-expand-lg border-bottom">
+      <nav className="navbar navbar-light bg-white navbar-expand-lg border-bottom iconnav">
         <div className="container">
           <div className="collapse navbar-collapse" id="navbar_main">
             <ul className="navbar-nav">
