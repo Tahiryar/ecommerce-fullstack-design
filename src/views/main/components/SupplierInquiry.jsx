@@ -1,20 +1,29 @@
 import React from "react";
+// import bannerImage from '../../../assets/images/banners/bg-warehouse.jpg'; // adjust path if needed
 
 const SupplierInquiry = () => {
   return (
-    <section className="pb-4 pt-4">
+    <section className="py-4">
       <div className="container">
         <article
-          className="card bg-primary p-5"
+          className="card bg-primary p-4 p-lg-5 text-white"
           style={{
-            minHeight: "400px",
             backgroundSize: "cover",
-            backgroundImage: "url('images/banners/bg-warehouse.jpg')",
+            // backgroundImage: `url(${bannerImage})`,
+            backgroundPosition: "center",
+            borderRadius: "12px",
           }}
         >
-          <div className="row">
-            <div className="col-lg-5">
-              <h2 className="text-white">
+          <div className="row align-items-center">
+            {/* MOBILE VIEW: ONLY TEXT AND BUTTON */}
+            <div className="col-12 d-lg-none text-center">
+              <h5>An easy way to send<br />requests to all suppliers</h5>
+              <button className="btn btn-light mt-3">Send inquiry</button>
+            </div>
+
+            {/* DESKTOP VIEW: TEXT + FORM */}
+            <div className="col-lg-5 d-none d-lg-block">
+              <h2 className="text-white mb-3">
                 An easy way to send requests to all suppliers
               </h2>
               <p className="text-white">
@@ -22,7 +31,8 @@ const SupplierInquiry = () => {
                 eiusmod tempor incididunt.
               </p>
             </div>
-            <div className="col-lg-5 ms-auto">
+
+            <div className="col-lg-5 ms-auto d-none d-lg-block">
               <article className="card card-body">
                 <form>
                   <h6 className="mb-3">Send quote to suppliers</h6>

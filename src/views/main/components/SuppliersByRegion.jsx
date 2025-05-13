@@ -1,37 +1,72 @@
-import React from 'react';
-const suppliers = [
-  { country: "Arabic Emirates", domain: "shopname.ae", code: "ae" },
-  { country: "Australia", domain: "shopname.ae", code: "au" },
-  { country: "United States", domain: "shopname.ae", code: "us" },
-  { country: "Russia", domain: "shopname.ru", code: "ru" },
-  { country: "Italy", domain: "shopname.it", code: "it" },
-  { country: "Denmark", domain: "denmark.com.dk", code: "dk" },
-  { country: "France", domain: "shopname.com.fr", code: "fr" },
-  { country: "Arabic Emirates", domain: "shopname.ae", code: "ae" },
+import React from "react";
+// import bannerImage from "../../../assets/images/banners/bg-warehouse.jpg";
 
-];
-
-export default function SuppliersByRegion() {
+const SupplierInquiry = () => {
   return (
-    <div className="container py-4">
-      <h4 className="mb-4">Suppliers by region</h4>
-      <div className="row">
-        {suppliers.map((supplier, index) => (
-          <div key={index} className="col-6 col-md-4 col-lg-3 mb-3 d-flex align-items-start">
-            <img
-              src={`https://flagcdn.com/w40/${supplier.code}.png`}
-              alt={supplier.country}
-              width="30"
-              height="20"
-              className="me-2 mt-1"
-            />
-            <div>
-              <div className="fw-bold">{supplier.country}</div>
-              <div className="text-muted" style={{ fontSize: '0.9rem' }}>{supplier.domain}</div>
+    <section className="pb-4 pt-4">
+      <div className="container">
+        <article
+          className="card bg-primary p-4 p-md-5"
+          style={{
+            minHeight: "300px",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            // backgroundImage: `url(${bannerImage})`,
+          }}
+        >
+          <div className="row align-items-center">
+            {/* TEXT SIDE */}
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-white">
+              <h2 className="mb-3">
+                An easy way to send requests to all suppliers
+              </h2>
+              <p className="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+
+            {/* FORM SIDE */}
+            <div className="col-12 col-lg-5 ms-lg-auto">
+              <article className="card card-body">
+                <form>
+                  <h6 className="mb-3">Send quote to suppliers</h6>
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="What item you need?"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <textarea
+                      className="form-control"
+                      placeholder="Type more details"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div className="mb-3 d-flex" style={{ maxWidth: "250px" }}>
+                    <input
+                      type="number"
+                      className="me-2 form-control"
+                      placeholder="Qty"
+                    />
+                    <select className="form-select">
+                      <option value="">Litres</option>
+                      <option value="">Kgs</option>
+                    </select>
+                  </div>
+                  <button type="submit" className="btn btn-primary">
+                    Send inquiry
+                  </button>
+                </form>
+              </article>
             </div>
           </div>
-        ))}
+        </article>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default SupplierInquiry;
