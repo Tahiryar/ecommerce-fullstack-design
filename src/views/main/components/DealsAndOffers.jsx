@@ -17,7 +17,7 @@ const DealsAndOffers = () => {
 
   return (
     <section className="pb-3">
-      <div className="container">
+      <div className="mobile_deals">
         <div className="card overflow-hidden">
           <div className="row gx-0">
           <aside className="col-lg-3 p-4">

@@ -22,7 +22,6 @@ const ElectronicsItems = () => {
     { title: "Cameras", img: img5, price: 599 },
     { title: "Gaming Consoles", img: img8, price: 499 },
     { title: "Accessories", img: img9, price: 49 },
-    
   ];
 
   return (
@@ -30,9 +29,10 @@ const ElectronicsItems = () => {
       <div className="container">
         <div className="card overflow-hidden">
           <div className="row gx-0">
+            {/* Desktop Sidebar */}
             <aside
-              className="col-lg-3 p-4 bg-cover"
-              style={{ backgroundImage:tech }}
+              className="col-lg-3 p-4 bg-cover d-none d-sm-block"
+              style={{ backgroundImage: `url(${tech})` }}
             >
               <header>
                 <h3 className="mb-3">
@@ -40,13 +40,15 @@ const ElectronicsItems = () => {
                   Gadgets
                 </h3>
                 <a href="#!" className="btn btn-light" onClick={(e) => e.preventDefault()}>
-                  Source now
+                  Source now →
                 </a>
               </header>
             </aside>
 
+            {/* Main content */}
             <div className="col-lg-9">
-              <ul className="row g-0 bordered-cols m-0 list-unstyled">
+              {/* Desktop Grid */}
+              <ul className="row g-0 bordered-cols m-0 list-unstyled d-none d-sm-flex">
                 {items.map((item, index) => (
                   <li key={index} className="col-6 col-lg-3 col-md-4">
                     <div className="card-product p-3 pe-0">
@@ -62,6 +64,34 @@ const ElectronicsItems = () => {
                   </li>
                 ))}
               </ul>
+
+              {/* Mobile layout */}
+              <div className="d-sm-none px-2 pt-3">
+                <h5 className="mb-3">Consumer Electronics</h5>
+
+                <div className="d-flex overflow-auto mb-3">
+                  {items.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 me-2 border p-2"
+                      style={{ width: "140px" }}
+                    >
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="w-100 mb-2"
+                        style={{ height: "100px", objectFit: "cover" }}
+                      />
+                      <div className="fw-semibold small">{item.title}</div>
+                      <div className="text-muted small">From USD {item.price}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <a href="#!" className="btn btn-link ps-0" onClick={(e) => e.preventDefault()}>
+                  Source now →
+                </a>
+              </div>
             </div>
           </div>
         </div>

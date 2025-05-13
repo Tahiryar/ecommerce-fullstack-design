@@ -5,6 +5,9 @@
 .mobile_card {
   padding: 20px;
 }
+.mobile_deals {
+  padding: 0px 130px;
+}
 
 @media (max-width: 768px) {
   .iconnav {
@@ -25,6 +28,13 @@
   .mobile-img-banner{
   height: 200px;
 }
+.mobile_deals{
+  padding: 0 !important;
+  margin: 0 !important;
+
 }
+}
+
+
 
 
